@@ -1,0 +1,19 @@
+package reporting;
+
+import domain.Employee;
+
+public class EmployeeReportFormatter extends ReportFormatter {
+
+    /**
+     * replacing Object object param to Employee employee
+     * @param employee
+     * @param formatType
+     */
+    public EmployeeReportFormatter(Employee employee, FormatType formatType) {
+        super(employee, formatType);
+    }
+
+    public String getFormattedEmployee(){
+        return getFormattedValue();
+    }
+}

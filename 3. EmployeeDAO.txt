@@ -1,0 +1,16 @@
+
+package domain.DAO;
+
+import domain.Employee;
+
+public class EmployeeDAO {
+    public void saveEmployee(Employee employee){
+        //database.DatabaseConnectionManager connectionManager = database.DatabaseConnectionManager.getManagerInstance();
+        //connectionManager.connect();
+        //connectionManager.getConnectionObject().prepareStatement("insert into Employee_tbl");
+        System.out.println("saved employee to the database: "+employee);
+    }
+    public void deleteEmployee(Employee employee){
+        System.out.println("deleted employee from the database: "+employee);
+    }
+}
